@@ -31,14 +31,14 @@ The assistant acts as an **Interview Coach** that asks role-specific questions, 
 ```mermaid
 flowchart LR
   Start((User starts session))
-  Start --> Greet[Assistant: Greet & confirm role & experience]
-  Greet --> AskType{Which question type?}
+  Start --> Greet[Assistant: Greet & confirm role/experience]
+  Greet --> AskType{Choose question type}
   AskType -->|Technical| TechQ[Ask technical question]
   AskType -->|Behavioral| BehavQ[Ask behavioral question]
-  TechQ --> UserAnswer[User: Provide answer]
+  TechQ --> UserAnswer[User gives answer]
   BehavQ --> UserAnswer
-  UserAnswer --> Feedback[Assistant: Feedback → 1) Strength • 2) Improvement • 3) Tip + Score]
-  Feedback --> FollowUp[Assistant: Follow-up question or practice task]
+  UserAnswer --> Feedback[Assistant gives feedback + score]
+  Feedback --> FollowUp[Assistant follow-up question/task]
   FollowUp --> Continue{Continue session?}
   Continue -->|Yes| AskType
-  Continue -->|No| End((Session ends — summary & resources))
+  Continue -->|No| End((Session ends with summary))
