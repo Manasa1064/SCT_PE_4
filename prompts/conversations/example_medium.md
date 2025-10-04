@@ -1,27 +1,37 @@
-# InterviewCoach Assistant - Medium Level Conversation
+# Example Conversation – Medium Level
 
-**Candidate:** Hi, I’m preparing for a software engineering role. Can we do a medium-level mock interview?
+**User:** Hi, I want to practice interview questions for a Software Engineer role.  
 
-**InterviewCoach:** Absolutely! Let’s start with a technical question. Can you explain the difference between **abstract classes** and **interfaces** in object-oriented programming?
-
-**Candidate:** Sure. Abstract classes can have both implemented and unimplemented methods, while interfaces can only have method declarations. Abstract classes are used when classes share some code, whereas interfaces are used for defining a contract that multiple classes can implement.
-
-**InterviewCoach:** Good. Can you give a practical example in Java?
-
-**Candidate:** For example, an abstract class `Vehicle` can have a method `startEngine()` implemented, and `Car` or `Bike` can inherit it. An interface `Drivable` can define `accelerate()` and `brake()`, and both `Car` and `Bike` can implement it with their own logic.
-
-**InterviewCoach:** Excellent. Next, a behavioral question: “Describe a time you faced a conflict in a team and how you resolved it.”
-
-**Candidate:** Once, two team members disagreed on the design approach. I organized a meeting, encouraged both to explain their perspective, and guided the team to select the approach that aligned best with project goals. Everyone felt heard, and the task was completed successfully.
-
-**InterviewCoach:** Great! One final technical question: Can you explain the **time complexity** of searching in a **binary search tree**?
-
-**Candidate:** Yes. In a balanced BST, searching takes **O(log n)**, because we eliminate half of the tree at each step. In the worst case (unbalanced), it can take **O(n)** if the tree is like a linked list.
-
-**InterviewCoach:** Perfect. Medium-level mock complete. Your answers are clear and structured.
+**Assistant:** Great! Let’s get started 🚀  
+First, can you tell me if you’d like to practice **technical** or **behavioral** questions?  
 
 ---
 
-**Feedback Summary:**
-- Strengths: Clear technical explanations, practical examples, concise behavioral answers.
-- Areas to Improve: Practice more edge cases in algorithms and BST scenarios.
+**User:** Technical.  
+
+**Assistant:** Perfect. Here’s a medium-level one:  
+👉 *"What is the difference between an abstract class and an interface in object-oriented programming?"*  
+
+---
+
+**User:** An abstract class can have both implemented and unimplemented methods, while an interface only has method declarations. Abstract classes are used when classes share some code, and interfaces are used to define a contract that multiple classes can implement.  
+
+**Assistant (Feedback):**  
+1. **Strength:** Clear differentiation between abstract class and interface.  
+2. **Improvement:** Could give a practical example for clarity.  
+3. **Tip:** Mention language-specific details, like Java interfaces can have default methods.  
+
+**Score:** 4.5/5  
+
+👉 Follow-up: *"Give a real-world example where you would choose an abstract class over an interface."*  
+
+---
+
+**User:** For example, a `Vehicle` abstract class can have shared methods like `startEngine()`, and subclasses like `Car` or `Bike` inherit it. An interface `Drivable` can define `accelerate()` and `brake()`, which all vehicles implement differently.  
+
+**Assistant (Feedback):**  
+1. **Strength:** Practical example illustrates the concept well.  
+2. **Improvement:** Could explain why shared code in abstract classes improves maintainability.  
+3. **Tip:** Highlight how interfaces allow multiple inheritance of behavior.  
+
+**Score:** 5/5  
